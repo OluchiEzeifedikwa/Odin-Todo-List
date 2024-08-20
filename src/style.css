@@ -1,0 +1,121 @@
+.big-card {
+    width: 900px;
+    height:500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: red; */
+    /* display: inline-grid;  */
+    grid-template: 50px / 50px; 
+    background-color: slategrey;
+    
+}
+
+.heading{
+    color:azure;
+}
+
+.open-button1 {
+    position: absolute;
+    /* top: 10px; */
+    /* right: 10px; */
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    margin-left: -560px;
+    margin-top: -200px;
+}
+
+.open-button1:hover {
+    background-color: grey;
+}
+
+
+/* .card {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    padding: 90px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gray;
+} */
+ 
+.open-button {
+    position: absolute;
+    /* top: 10px; */
+    /* right: 10px; */
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    margin-left: -60px;
+    margin-top: -270px;
+}
+
+.open-button:hover {
+    background-color: grey;
+}
+
+
+.book {
+    padding: 300px;
+
+}
+
+#library {
+    grid-area:1/1/40/90; 
+    display: inline-grid;
+    
+}
+
+
+
+.card {
+    /* background-color: #ffffff; */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1px;
+    /* width: 20px; */
+    /* margin: -200px;   */
+    /* width: 1600px; */
+    display: flex;
+    margin-top: -180px;
+    margin-bottom: 180px; 
+    margin-left: 10px;
+    margin-right: 500px;
+    background-color: grey;
+    border-left-color: goldenrod;
+}
+
+.card:hover {
+    background-color: whitesmoke;
+}
+
+#form1 {
+    height: 500px;
+    margin-bottom: -395px;
+    /* display: none; */
+    border-radius: 20px;
+    /* background-color: var(--main-bg); */
+    margin-left: 600px;
+    background-color: grey;
+    margin-top: -180px;
+    padding-top: 80px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    border-left-color: 10px;
+    padding-bottom: 25px;
+    color: goldenrod;  
+    border-color: goldenrod;
+    width: 260px;
+    height: 200px;
+
+}
+

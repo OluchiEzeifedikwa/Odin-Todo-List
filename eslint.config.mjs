@@ -1,0 +1,23 @@
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
+import { fixupConfigRules } from "@eslint/compat";
+import eslintConfigPrettier from "eslint-config-prettier";
+
+
+
+export default [
+  {files: ["**/*.{js,mjs,cjs,jsx}"]},
+  { languageOptions: { parserOptions: { ecmaFeatures: { jsx: true } } } },
+  {languageOptions: { globals: globals.browser }},
+  pluginJs.configs.recommended,
+  ...fixupConfigRules(pluginReactConfig),
+  eslintConfigPrettier,
+];
+
+const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommended');
+
+module.exports = [
+  // Any other config imports go at the top
+  eslintPluginPrettierRecommended,
+];
